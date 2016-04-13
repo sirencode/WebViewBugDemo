@@ -1,3 +1,4 @@
+<!--动态生成类似这样的代码-->
 javascript:(function JsAddJavascriptInterface_(){
 	if (typeof(window.jsInterface)!='undefined') {    
 		console.log('window.jsInterface_js_interface_name is exist!!');} 
@@ -11,6 +12,7 @@ javascript:(function JsAddJavascriptInterface_(){
 			onImageClick:function(arg0,arg1,arg2) { 
 				prompt('MyApp:'+JSON.stringify({obj:'jsInterface',func:'onImageClick',args:[arg0,arg1,arg2]}));
 			},
+           <!--根据native中定义的方法动态的生成这一部分代码，并可以直接在js里面调用jsInterface.XXX();-->
 		};
 	}
 }
